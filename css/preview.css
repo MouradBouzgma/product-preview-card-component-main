@@ -19,7 +19,7 @@ body {
   background-color: var(--Cream);
 }
 
-.card {
+main {
   display: flex;
   width: 600px;
   position: absolute;
@@ -31,52 +31,52 @@ body {
 }
 
 @media (max-width:599px) {
-  .card {
+  main {
     flex-direction: column;
     width: 90%;
   }
 }
 
-.card .card-picture {
+main .card-picture {
   flex-basis: 130%;
 }
 
-.card .card-picture .product-mobile {
+main .card-picture .product-mobile {
   width: 100%;
   border-radius: 10px 10px 0px 0px;
 }
 
-.card .card-picture .product-desktop {
+main .card-picture .product-desktop {
   width: 100%;
   border-radius: 10px 0px 0px 10px;
 }
 
 @media (max-width:599px) {
-  .card .card-picture .product-mobile {
+  main .card-picture .product-mobile {
     display: block;
   }
 
-  .card .card-picture .product-desktop {
+  main .card-picture .product-desktop {
     display: none;
   }
 
 }
 
 @media (min-width:600px) {
-  .card .card-picture .product-mobile {
+  main .card-picture .product-mobile {
     display: none;
   }
 
-  .card .card-picture .product-desktop {
+  main .card-picture .product-desktop {
     display: block;
   }
 }
 
-.card .card-info {
+main .card-info {
   padding: 20px;
 }
 
-.card .card-info p:first-child {
+main .card-info p:first-child {
   color: var(--Dark-grayish-blue);
   text-transform: uppercase;
   font-family: 'Montserrat', serif;
@@ -85,7 +85,7 @@ body {
   margin-bottom: var(--main-margin);
 }
 
-.card .card-info p:last-of-type {
+main .card-info p:last-of-type {
   font-size: 14px;
   line-height: 1.6;
   color: var(--Dark-grayish-blue);
@@ -94,7 +94,7 @@ body {
   margin-top: var(--main-margin);
 }
 
-.card .card-info h1 {
+main .card-info h1 {
   font-weight: bolder;
   font-family: 'Fraunces', sans-serif;
   font-size: 40px;
@@ -103,26 +103,26 @@ body {
   line-height: 35px;
 }
 
-.card .card-info .price {
+main .card-info .price {
   display: flex;
   align-items: center;
   margin-top: var(--main-margin);
 }
 
-.card .card-info span:first-of-type {
+main .card-info span:first-of-type {
   color: var(--Dark-cyan);
   font-size: 40px;
   font-weight: bold;
   font-family: 'Fraunces';
 }
 
-.card .card-info span:last-of-type {
+main .card-info span:last-of-type {
   text-decoration: line-through;
   margin-left: 12px;
   color: var(--Dark-cyan);
 }
 
-.card .card-info .add-to-cart {
+main .card-info .add-to-cart {
   background-color: var(--Dark-cyan);
   display: flex;
   gap: 15px;
@@ -132,7 +132,7 @@ body {
   margin-top: var(--main-margin);
 }
 
-.card .card-info .add-to-cart p {
+main .card-info .add-to-cart p {
   color: white;
   font-weight: bold;
   text-transform: capitalize;
